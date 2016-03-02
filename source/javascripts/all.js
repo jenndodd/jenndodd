@@ -8,3 +8,17 @@ $(document).ready(function() {
       $("nav").removeClass("scroll");
   });
 });
+
+
+
+$(document).ready(function(){
+
+  $(".piece").hover( 
+    function(){ 
+      $(this).children(".caption").fadeTo("fast", .7); 
+    }, 
+    function(){ 
+      $(this).children(".caption").fadeTo("fast", 0); 
+    }
+  );
+});
