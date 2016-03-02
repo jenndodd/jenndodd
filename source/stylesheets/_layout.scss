@@ -1,0 +1,141 @@
+/**
+ * Site header
+ */
+.site-header {
+  height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+// To make the page content sit below the header
+.header-spacer {
+  height: 60px;
+}
+
+.site-nav {
+  line-height: 56px;
+  font-family: $sister-font-family;
+  background-color: $background-color;
+  transition: all 0.3s ease;
+}
+
+.site-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.site-title, .page-link {
+  color: $text-color;
+  padding-bottom: 2px;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.active {
+  border-bottom: 2px solid $text-color;
+}
+
+.scroll {
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+}
+
+/**
+ * Page content
+ */
+
+.page-content {
+  min-height: 100%;
+  margin-bottom: -150px;
+}
+
+.page-content:after {
+  content: "";
+  display: block;
+}
+
+.page-heading {
+  font-size: 20px;
+}
+
+.post-list {
+  margin-left: 0;
+  list-style: none;
+
+  > li {
+    margin-bottom: $spacing-unit;
+  }
+}
+
+.post-meta {
+  font-size: $small-font-size;
+  color: $grey-color;
+}
+
+.post-link {
+  display: block;
+  font-size: 24px;
+}
+
+/**
+ * Wrapper
+ */
+.container {
+  max-width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $spacing-unit;
+  padding-left: $spacing-unit;
+  @extend %clearfix;
+}
+
+
+/**
+ * Site footer
+ */
+
+.site-footer, .page-content:after {
+  height: 150px; 
+}
+
+.site-footer {
+  background-color: $teal-4;
+  color: $teal-1;
+
+  a {
+    color: $teal-1;
+
+    &:hover {
+      color: $teal-1-dark;
+    }
+  }
+}
+
+.social-media-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.social-icon {
+
+  > svg {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+
+    path {
+      @extend .transition-default;
+      fill: $teal-1;
+    }
+    &:hover {
+      path { 
+        fill: $teal-1-dark;
+      }
+    }
+  }
+}
+
+

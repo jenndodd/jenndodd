@@ -1,0 +1,105 @@
+[class*="span"] {
+  float: left;
+  min-height: 1px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+ul.projects {
+  margin: 20px 0;
+}
+
+ul.projects li {
+  list-style-type: none;
+}
+
+.piece {
+  max-width: 300px;
+  height: 300px;
+  position: relative;
+  -webkit-box-shadow: 0 0 8px #999;
+  -moz-box-shadow: 0 0 8px #999;
+  box-shadow: 0 0 8px #999; 
+}
+
+.caption {
+  background-color: #fff;
+  color: #000000;
+  display: block;
+  font-weight: bold;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.caption h2 {
+  font-size: 30px;
+  line-height: 40px;
+  font-family: 'Volkhov', 'Garamond', serif;
+  font-weight: bold;
+  padding: 10px 0;
+  -webkit-text-shadow: 2px 2px 4px #f9f9f9;
+  -moz-text-shadow: 2px 2px 4px #f9f9f9;
+  text-shadow: 1px 1px 1px #f9f9f9;
+}
+
+.caption p{
+
+  padding: 5px;
+}
+
+@media (max-width: 979px) {
+  .container {
+    width: 754px;
+  }
+
+  .span4, .span4 img {
+    width: 228px;
+  }
+
+  .piece {
+    height: 228px;
+  }
+  
+}
+
+
+@media (max-width: 745px) {
+  .container {
+    width: 502px;
+  }
+
+  .choke {
+    float: none;
+    margin: 0 auto -10px auto;
+  }
+  
+  .haiku {
+    display:none;
+  }
+
+}
+
+@media (max-width: 508px)  {
+
+
+  .container {
+    width: 300px;
+  }
+
+  .span4, .span4 img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .span4 {
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+
+  
+}

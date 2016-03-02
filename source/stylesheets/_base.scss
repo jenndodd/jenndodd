@@ -1,0 +1,268 @@
+/**
+ * Reset some basic elements
+ */
+ body, h1, h2, h3, h4, h5, h6,
+ p, blockquote, pre, hr,
+ dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%
+}
+
+/**
+ * Basic styling
+ */
+ body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: 400;
+  color: $text-color;
+  background-color: $background-color;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+ h1, h2, h3, h4, h5, h6,
+ p, blockquote, pre,
+ ul, ol, dl, figure,
+ %vertical-rhythm {
+  margin-bottom: $spacing-unit / 2;
+}
+
+
+
+/**
+ * Images
+ */
+ img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+
+
+/**
+ * Figures
+ */
+ figure > img {
+  display: block;
+}
+
+figcaption {
+  font-size: $small-font-size;
+}
+
+
+
+/**
+ * Lists
+ */
+ ul, ol {
+  margin-left: $spacing-unit;
+}
+
+li {
+  > ul,
+  > ol {
+   margin-bottom: 0;
+ }
+}
+
+ul.horizontal-list {
+  display: inline;
+  li {
+    display: inline-block;
+    padding-right: 15px;
+    &:last-child {
+      padding-left: 0;
+    }
+  }
+}
+
+
+
+/**
+ * Headings
+ */
+ h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  font-family: $sister-font-family;
+}
+
+
+
+/**
+ * Links
+ */
+ a {
+  transition: all 0.2s ease;
+  color: $teal-4;
+  text-decoration: none;
+
+  &:hover {
+    color: $teal-2;
+    text-decoration: underline;
+  }
+}
+
+
+
+/**
+ * Blockquotes
+ */
+ blockquote {
+  color: $grey-color;
+  border-left: 4px solid $grey-color-light;
+  padding-left: $spacing-unit / 2;
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-style: italic;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+
+/**
+ * Code formatting
+ */
+ pre,
+ code {
+  font-size: 15px;
+  border: 1px solid $grey-color-light;
+  border-radius: 3px;
+  background-color: lighten($grey-color-light, 6%);
+}
+
+code {
+  padding: 1px 5px;
+}
+
+pre {
+  padding: 8px 12px;
+  overflow-x: scroll;
+
+  > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+
+/**
+ * Clearfix
+ */
+ %clearfix {
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+/**
+ * Alignment
+ */
+
+ .txt-c {
+  text-align: center;
+}
+
+.pull-right {
+  float: right;
+}
+
+
+/**
+  * Typography
+  */
+
+.em-low {
+  font-weight: 300;
+}
+
+.em-default {
+  font-weight: 400;
+}
+
+.em-med {
+  font-weight: 500;
+}
+
+.em-high {
+  font-weight: 700;
+}
+
+.em-ital {
+  font-style: italic;
+}
+
+.ginormous {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+/**
+  * Whitespace
+  */
+
+.ptl {
+  padding-top: 15px;
+}
+
+.ptxl {
+  padding-top: 20px;
+}
+
+.ptxxxl {
+  padding-top: 60px;
+}
+
+.pbxl {
+  padding-bottom: 20px;
+}
+
+.pbh {
+  padding-bottom: 75px;
+}
+
+.pls, .phs {
+  padding-left: 5px;
+}
+
+.prs, .phs {
+  padding-right: 5px;
+}
+
+.mtl {
+  margin-top: 15px;
+}
+
+.mll, .mhl {
+  margin-left: 15px;
+}
+
+.mrl, .mhl {
+  margin-right: 15px;
+}
+
+/**
+  * Transitions
+  */
+
+.transition-default {
+  transition: all 0.3s ease
+}
